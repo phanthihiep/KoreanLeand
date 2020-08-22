@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_220"
+        android:layout_below="@+id/app_bar">
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/content_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_home" />
+        
+        <TextView
+            android:id="@+id/tv_logo"
+            style="@style/StyleBigLargeBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="@dimen/dimen_80"
+            android:layout_marginRight="@dimen/dimen_80"
+            android:gravity="center"
+            android:text="@string/name_logo" />
+        
+        <TextView
+            style="@style/StyleBigLargeBold"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:layout_marginRight="@dimen/dimen_40"
+            android:gravity="center"
+            android:text="@string/name_logo2" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:orientation="vertical">
+        
+        <TextView
+            android:gravity="center"
+            android:drawablePadding="@dimen/dimen_10"
+            android:drawableLeft="@mipmap/ic_book"
+            style="@style/StyleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_20"
+            android:text="@string/title_vocabulary"
+            android:drawableStart="@mipmap/ic_book" />
+        
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TableRow android:gravity="center">
+                
+                <TextView
+                    android:id="@+id/tvBook1"
+                    style="@style/StyleTitleChild"
+                    android:layout_marginEnd="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:background="@drawable/background_book_1"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_25"
+                    android:text="@string/book_1" />
+                
+                <TextView
+                    android:id="@+id/tvBook2"
+                    style="@style/StyleTitleChild"
+                    android:layout_marginStart="@dimen/dimen_10"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:background="@drawable/background_book_2"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_25"
+                    android:text="@string/book_2" />
+            </TableRow>
+            
+            <TableRow android:gravity="center"
+                android:padding="@dimen/dimen_10">
+                
+                <TextView
+                    android:id="@+id/tvBool3"
+                    style="@style/StyleTitleChild"
+                    android:layout_marginEnd="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:background="@drawable/background_book_3"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_25"
+                    android:text="@string/book_3" />
+                
+                <TextView
+                    android:id="@+id/tvBook4"
+                    style="@style/StyleTitleChild"
+                    android:layout_marginStart="@dimen/dimen_10"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:background="@drawable/background_book_4"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_25"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:text="@string/book_4" />
+            </TableRow>
+            
+            <TableRow android:gravity="center">
+                
+                <TextView
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:background="@drawable/background_book_5"
+                    android:id="@+id/tvBook5"
+                    style="@style/StyleTitleChild"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_25"
+                    android:text="@string/book_5"
+                    android:layout_marginEnd="@dimen/dimen_10" />
+                
+                <TextView
+                    android:background="@drawable/background_book_6"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:id="@+id/tvBook6"
+                    style="@style/StyleTitleChild"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_25"
+                    android:text="@string/book_6"
+                    android:layout_marginStart="@dimen/dimen_10" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>

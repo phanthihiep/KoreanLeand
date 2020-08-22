@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <style name="StyleBigLargeBold">
+        <item name="android:textColor">@color/colorWhile</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+    
+    <style name="StyleTitle">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/font_22</item>
+        <item name="android:textColor">@color/colorBlack30</item>
+    </style>
+    
+    <style name="StyleTitleChild" parent="StyleTitle">
+        <item name="android:textSize">@dimen/font_19</item>
+    </style>
+    
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+    </style>
+</resources>

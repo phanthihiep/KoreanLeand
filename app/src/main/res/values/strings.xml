@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NguPhapTiengHan</string>
+    <string name="name_logo">한국어</string>
+    <string name="name_logo2">공보해요</string>
+    <string name="content_description">image not exit</string>
+    <string name="title_vocabulary">Từ vựng</string>
+    <string name="title_grammar">Ngữ pháp</string>
+    <string name="book_1">Quyển 1</string>
+    <string name="book_2">Quyển 2</string>
+    <string name="book_3">Quyển 3</string>
+    <string name="book_4">Quyển 4</string>
+    <string name="book_5">Quyển 5</string>
+    <string name="book_6">Quyển 6</string>
+    
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
