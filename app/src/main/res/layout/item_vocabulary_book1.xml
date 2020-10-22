@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10">
+        
+        <LinearLayout
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <ImageView
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/icon_item"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_50"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <TextView
+                style="@style/StyleItemVocabulary"
+                android:id="@+id/tvKorean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="jgjh" />
+            
+            <TextView
+                style="@style/StyleItemVocabularyMean"
+                android:id="@+id/tvMean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="jgjh" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <View
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPinkLight" />
+</LinearLayout>

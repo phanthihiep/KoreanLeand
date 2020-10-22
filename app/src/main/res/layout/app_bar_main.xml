@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-              android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_height="match_parent">
     
     <com.google.android.material.appbar.AppBarLayout
+        android:background="#FFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"/>
+            android:layout_height="?actionBarSize">
+            
+            <TextView
+                android:gravity="center"
+                android:textColor="#F1BBB6"
+                android:text="한국어"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
     
     <FrameLayout
