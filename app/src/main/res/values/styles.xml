@@ -14,6 +14,17 @@
         <item name="android:textSize">25sp</item>
     </style>
     
+    <style name="StyleItemVocabulary">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    
+    <style name="StyleItemVocabularyMean" parent="StyleItemVocabulary">
+        <item name="android:textColor">@color/colorBlack30</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    
     <style name="StyleTitle">
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:textSize">@dimen/font_22</item>
