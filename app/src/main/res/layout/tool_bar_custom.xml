@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent">
     
     <com.google.android.material.appbar.AppBarLayout
-        android:background="@drawable/color_toolbar"
+        android:background="@color/colorPinkLight"
+        android:layout_marginEnd="@dimen/dimen_40"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_40">
+        
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/toolbar_detail"
+            android:background="@color/colorPinkLight"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize">
-            
+    
             <TextView
                 android:layout_marginEnd="@dimen/dimen_35"
                 android:textColor="@color/colorGradientCenter"
-                android:text="@string/title_home"
+                android:text="@string/title_empty"
                 android:textStyle="bold"
                 android:textSize="@dimen/font_19"
                 android:layout_width="match_parent"
@@ -25,11 +29,4 @@
                 android:layout_marginRight="@dimen/dimen_15" />
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
-    
-    <FrameLayout
-        android:id="@+id/frame_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        
-    </FrameLayout>
 </LinearLayout>

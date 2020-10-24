@@ -1,11 +1,16 @@
 <resources>
 
-    <!-- Base application theme. -->
+     Base application theme.
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
     
     <style name="StyleBigLargeBold">
@@ -15,13 +20,26 @@
     </style>
     
     <style name="StyleItemVocabulary">
-        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColor">@color/colorAccent</item>
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:textSize">17sp</item>
     </style>
     
+    <style name="StyleFontNavigate">
+        <item name="android:textColor">@color/colorWhile</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="StyleFontTitleNavigate" parent="StyleFontNavigate">
+        <item name="android:textColor">@color/colorWhile</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    
     <style name="StyleItemVocabularyMean" parent="StyleItemVocabulary">
-        <item name="android:textColor">@color/colorBlack30</item>
+        <item name="android:textColor">@color/colorGray</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:textStyle">italic</item>
     </style>
     
@@ -32,7 +50,9 @@
     </style>
     
     <style name="StyleTitleChild" parent="StyleTitle">
-        <item name="android:textSize">@dimen/font_19</item>
+        <item name="android:textSize">@dimen/font_18</item>
+        <item name="android:textColor">#AE7A8C</item>
+        
     </style>
     
     <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
@@ -40,5 +60,12 @@
         <item name="tabIndicatorHeight">3dp</item>
         <item name="tabBackground">?attr/selectableItemBackground</item>
         <item name="tabSelectedTextColor">@android:color/white</item>
+    </style>
+    
+    <style name="StyleCardViewHome" >
+        <item name="android:layout_marginBottom">@dimen/dimen_5</item>
+        <item name="android:layout_marginTop">@dimen/dimen_5</item>
+        <item name="android:layout_width">@dimen/dimen_150</item>
+        <item name="android:layout_height">@dimen/dimen_100</item>
     </style>
 </resources>

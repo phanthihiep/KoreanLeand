@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <corners
-        android:topLeftRadius="@dimen/dimen_30"
-        android:topRightRadius="@dimen/dimen_30"/>
     <gradient android:type="linear"
         android:angle="315"
-        android:startColor="@color/colorWhile"
+        android:startColor="@color/colorPinkLight"
         android:centerColor="@color/colorWhile"
-        android:endColor="@color/colorGradientLight"/>
+        android:endColor="@color/colorGradientStart"/>
 </shape>

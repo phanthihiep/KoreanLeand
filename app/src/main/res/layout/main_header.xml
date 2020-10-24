@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_header"
+    app:cardCornerRadius="@dimen/dimen_20"
+    app:cardElevation="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_5">
+    
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_220">
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/content_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_home" />
+        
+        <TextView
+            android:id="@+id/tv_logo"
+            style="@style/StyleBigLargeBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="@dimen/dimen_80"
+            android:layout_marginRight="@dimen/dimen_80"
+            android:gravity="center"
+            android:text="@string/name_logo" />
+        
+        <TextView
+            style="@style/StyleBigLargeBold"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:layout_marginRight="@dimen/dimen_40"
+            android:gravity="center"
+            android:text="@string/name_logo2" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
