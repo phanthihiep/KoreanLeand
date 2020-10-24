@@ -1,6 +1,7 @@
 package com.example.nguphaptienghan.activitys
 
 import android.annotation.SuppressLint
+import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -19,6 +20,7 @@ class Book1Activity : AppCompatActivity() {
     private lateinit var toolbar: Toolbar
     lateinit var mRecyclerView: RecyclerView
     lateinit var tvNumWord: TextView
+    lateinit var tvTitle: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,14 +39,16 @@ class Book1Activity : AppCompatActivity() {
         adapter = VocabularyAdapter(listVocabulary, this)
         mRecyclerView.layoutManager = layoutManager
         mRecyclerView.adapter = adapter
-        tvNumWord.text = listVocabulary.size.toString() + " words"
+        tvNumWord.text = listVocabulary.size.toString() + " Words"
     }
 
     // init view
     private fun initView() {
         mRecyclerView = findViewById(R.id.rcWordBook1)
         tvNumWord = findViewById(R.id.numWord)
+        tvTitle = findViewById(R.id.tvTitle)
         toolbar = findViewById(R.id.toolbar_detail)
+
     }
 
     fun actionToolBar() {

@@ -19,6 +19,7 @@
         android:layout_below="@+id/app_bar">
         
         <LinearLayout
+            android:paddingTop="@dimen/dimen_10"
             android:layout_width="match_parent"
             android:layout_height="170dp"
             android:layout_marginEnd="@dimen/dimen_40"
@@ -30,14 +31,15 @@
             tools:ignore="RtlSymmetry">
             
             <TextView
-                android:layout_marginStart="@dimen/dimen_10"
+                android:id="@+id/tvTitle"
+                android:layout_marginStart="@dimen/dimen_15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
                 android:gravity="center"
+                android:fontFamily="@font/abc"
                 android:text="@string/title_home_detail1"
                 android:textColor="@color/colorWhile"
-                android:textSize="24sp"
+                android:textSize="28sp"
                 android:layout_marginLeft="@dimen/dimen_10" />
             
             <TextView
@@ -45,13 +47,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimen_15"
-                android:paddingStart="@dimen/dimen_15"
-                android:gravity="start"
-                android:text="11000"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:text="11000 Words          "
                 android:textColor="#AE7A8C"
                 android:textSize="19sp"
-                android:textStyle="italic"
-                android:paddingLeft="@dimen/dimen_15" />
+                android:textStyle="italic" />
         </LinearLayout>
         
         <ImageView
