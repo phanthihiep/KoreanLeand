@@ -25,7 +25,7 @@ class BookAdapter(private val listBook: ArrayList<Book>, private  var onClickIte
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.binItem(listBook[position])
         holder.itemView.setOnClickListener {
-            onClickItemBook.onClick(position)
+            onClickItemBook.onClick(listBook[position].id)
         }
     }
 

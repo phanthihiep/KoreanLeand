@@ -4,13 +4,14 @@
     
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo_app"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activitys.Book1Activity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activitys.BookActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:launchMode="singleTask"/>
         <activity android:name=".activitys.addVocabulary" />
         <activity android:name=".activitys.HomeActivity" />
         <activity android:name=".MainActivity"

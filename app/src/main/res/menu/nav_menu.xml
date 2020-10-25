@@ -3,27 +3,26 @@
     >
     <group android:checkableBehavior="single">
         <item
-            android:iconTint="@color/colorWhile"
-            android:id="@+id/nav_profile"
+            android:id="@+id/nav_home"
             android:icon="@drawable/ic_home"
-            android:title="Trang chủ" />
+            android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_messages"
+            android:id="@+id/nav_exam"
             android:icon="@drawable/ic_book"
-            android:title="Đề thi" />
+            android:title="@string/menu_exam" />
         <item
-            android:id="@+id/nav_friends"
+            android:id="@+id/nav_favorite"
             android:icon="@drawable/ic_heart"
-            android:title="Yêu thích" />
+            android:title="@string/menu_favorite" />
     </group>
     
     
-    <item android:title="Account Settings">
+    <item android:title="@string/menu_user_setting">
         <menu>
             <item
-                android:id="@+id/nav_update"
+                android:id="@+id/nav_setting"
                 android:icon="@drawable/ic_settings"
-                android:title="Cài đặt" />
+                android:title="@string/menu_setting" />
         </menu>
     </item>
 </menu>

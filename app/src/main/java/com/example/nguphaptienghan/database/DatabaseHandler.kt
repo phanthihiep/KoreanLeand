@@ -47,11 +47,41 @@ class DatabaseHandler(context: Context): SQLiteOpenHelper(context,DATABASE_NAME 
         return success
     }
 
+    // get all vocabulary book one
+    fun viewVocabularyOne(type: String):ArrayList<Vocabulary>{
+        return commonGetVocabulary(type)
+    }
+
+    // get all vocabulary book two
+    fun viewVocabularyTwo(type: String):ArrayList<Vocabulary>{
+        return commonGetVocabulary(type)
+    }
+
+    // get all vocabulary book three
+    fun viewVocabularyThree(type: String):ArrayList<Vocabulary>{
+        return commonGetVocabulary(type)
+    }
+
+    // get all vocabulary book four
+    fun viewVocabularyFour(type: String):ArrayList<Vocabulary>{
+        return commonGetVocabulary(type)
+    }
+
+    // get all vocabulary book five
+    fun viewVocabularyFive(type: String):ArrayList<Vocabulary>{
+        return commonGetVocabulary(type)
+    }
+
+    // get all vocabulary book six
+    fun viewVocabularySix(type: String):ArrayList<Vocabulary>{
+        return commonGetVocabulary(type)
+    }
+
     //method to read data
     @SuppressLint("Recycle")
-    fun viewVocabulary():ArrayList<Vocabulary>{
+    fun commonGetVocabulary(type: String):ArrayList<Vocabulary>{
         val vocabularyList:ArrayList<Vocabulary> = ArrayList()
-        val selectQuery = "SELECT  * FROM $TABLE_CONTACTS WHERE $KEY_TYPE = '1'"
+        val selectQuery = "SELECT  * FROM $TABLE_CONTACTS WHERE $KEY_TYPE = $type"
         val db = this.readableDatabase
         var cursor: Cursor? = null
         try{

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activitys.Book1Activity">
+    tools:context=".activitys.BookActivity">
     
     <include
         android:id="@+id/app_bar"
@@ -49,7 +49,6 @@
                 android:layout_marginTop="@dimen/dimen_15"
                 android:fontFamily="@font/font"
                 android:gravity="center"
-                android:text="11000 Words          "
                 android:textColor="#AE7A8C"
                 android:textSize="19sp"
                 android:textStyle="italic" />

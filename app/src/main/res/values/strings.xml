@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NguPhapTiengHan</string>
+    <string name="app_name">Tiếng Hàn Tổng Hợp</string>
     <string name="name_logo">한국어</string>
     <string name="name_logo2">공보해요</string>
     <string name="content_description">image not exit</string>
@@ -17,12 +17,17 @@
     <string name="title_title_header">Hello everyone</string>
     <string name="title_home">Trang chủ</string>
     <string name="title_empty"> </string>
+    <string name="menu_home"> Trang chủ </string>
+    <string name="menu_exam"> Đề thi</string>
+    <string name="menu_favorite">Yêu thích</string>
+    <string name="menu_setting">Cài đặt</string>
+    <string name="menu_user_setting">Cài đặt người dùng</string>
     <string name="title_home_detail1">Vocabulary \n basic 1</string>
-    <string name="title_home_detail2">Từ vựng tiếng Hàn \n sơ cấp 2</string>
-    <string name="title_home_detail3">Từ vựng tiếng Hàn \n sơ cấp 3</string>
-    <string name="title_home_detail4">Từ vựng tiếng Hàn \n sơ cấp 4</string>
-    <string name="title_home_detail5">Từ vựng tiếng Hàn \n sơ cấp 5</string>
-    <string name="title_home_detail6">Từ vựng tiếng Hàn \n sơ cấp 6</string>
+    <string name="title_home_detail2">Vocabulary \n basic 2</string>
+    <string name="title_home_detail3">Vocabulary \n basic 3</string>
+    <string name="title_home_detail4">Vocabulary \n basic 4</string>
+    <string name="title_home_detail5">Vocabulary \n basic 5</string>
+    <string name="title_home_detail6">Vocabulary \n basic 6</string>
     
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
