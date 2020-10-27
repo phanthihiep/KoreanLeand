@@ -34,6 +34,7 @@ class BookActivity : AppCompatActivity() {
         initView()
         actionToolBar()
         db = DatabaseHandler(this)
+       // addData()
         getData(type)
         setAdapter()
     }
@@ -100,5 +101,13 @@ class BookActivity : AppCompatActivity() {
     override fun onBackPressed() {
         super.onBackPressed()
         finish()
+    }
+
+
+    fun addData() {
+        val lis = ArrayList<Vocabulary>()
+        lis.add(Vocabulary(361, "새", "Chim", "1"))
+            lis.forEach{vocabulary -> db.addVocabulary(vocabulary)
+        }
     }
 }
