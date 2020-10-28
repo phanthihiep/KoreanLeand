@@ -15,6 +15,7 @@
             android:layout_height="?actionBarSize">
             
             <TextView
+                android:id="@+id/tv_Title_home"
                 android:layout_marginEnd="@dimen/dimen_35"
                 android:textColor="@color/colorGradientCenter"
                 android:text="@string/title_home"

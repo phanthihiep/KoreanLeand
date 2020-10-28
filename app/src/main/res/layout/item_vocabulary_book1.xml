@@ -49,11 +49,32 @@
                 android:layout_height="wrap_content"
                 android:text="jgjh" />
         </LinearLayout>
-        <ImageView
+        
+        <LinearLayout
             android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_snow"/>
+            android:layout_height="wrap_content">
+    
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/image_snow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_snow"
+                android:contentDescription="@string/content_description" />
+    
+            <CheckBox
+                android:layout_gravity="center"
+                android:buttonTint="@color/colorAccent"
+                android:layout_margin="@dimen/dimen_5"
+                android:id="@+id/cb_remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        
+        
     </RelativeLayout>
     
     <View

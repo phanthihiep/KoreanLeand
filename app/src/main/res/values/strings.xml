@@ -19,6 +19,7 @@
     <string name="title_empty"> </string>
     <string name="menu_home"> Trang chủ </string>
     <string name="menu_exam"> Đề thi</string>
+    <string name="menu_study">Luyện tâp</string>
     <string name="menu_favorite">Yêu thích</string>
     <string name="menu_setting">Cài đặt</string>
     <string name="menu_user_setting">Cài đặt người dùng</string>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:id="@+id/tv_study"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/dimen_70"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:background="@color/colorWhile"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="@dimen/dimen_3"
+        android:text="@string/menu_study"
+        android:textColor="@color/colorBlack30" />
+    
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_study"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="22dp"
+        android:src="@drawable/ic_pen"
+        app:backgroundTint="@color/colorOre"
+        app:fabSize="mini" />
+    
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/dimen_70"
+        android:layout_marginRight="@dimen/dimen_80"
+        android:background="@color/colorWhile"
+        android:gravity="center"
+        android:padding="@dimen/dimen_3"
+        android:text="@string/menu_exam"
+        android:textColor="@color/colorBlack30" />
+    
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_exam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="22dp"
+        android:src="@drawable/ic_contract"
+        app:backgroundTint="@color/colorGradientCenter"
+        app:fabSize="mini" />
+</FrameLayout>
