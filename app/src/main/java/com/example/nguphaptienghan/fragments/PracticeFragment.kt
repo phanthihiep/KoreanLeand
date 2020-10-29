@@ -1,23 +1,29 @@
 package com.example.nguphaptienghan.fragments
 
 import android.app.Activity
+import android.app.AlertDialog
 import android.content.Context
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.nguphaptienghan.R
-import com.example.nguphaptienghan.adapters.BookAdapter
 import com.example.nguphaptienghan.adapters.FlashCardAdapter
-import com.example.nguphaptienghan.adapters.VocabularyAdapter
 import com.example.nguphaptienghan.database.DatabaseHandler
+import com.example.nguphaptienghan.modle.OnClickItemFlashCard
 import com.example.nguphaptienghan.modle.Vocabulary
 
-class PracticeFragment : Fragment() {
+class PracticeFragment : Fragment(), OnClickItemFlashCard {
     private lateinit var mContext: Context
+    private lateinit var mAlertDialog: AlertDialog
+    private lateinit var mDialogBundle: AlertDialog.Builder
     private lateinit var mRcFlashCard: RecyclerView
     private  var mAdapter: FlashCardAdapter?= null
     private var layoutManager: RecyclerView.LayoutManager? = null
@@ -48,7 +54,7 @@ class PracticeFragment : Fragment() {
     // set data for adapter
     private fun setAdapter() {
         layoutManager = GridLayoutManager(mContext, 3)
-        mAdapter = FlashCardAdapter(listVocabulary)
+        mAdapter = FlashCardAdapter(listVocabulary, this)
         mRcFlashCard.layoutManager = layoutManager
         mRcFlashCard.adapter = mAdapter
     }
@@ -69,5 +75,27 @@ class PracticeFragment : Fragment() {
             return PracticeFragment()
         }
 
+    }
+
+    override fun onClickItem(vocanulary: Vocabulary) {
+        showContentMean(R.layout.dialog_mean_word, vocanulary.vietnamese)
+    }
+
+    //show dialog content
+    private fun showContentMean( layout: Int, content: String) {
+        mDialogBundle = AlertDialog.Builder(mContext)
+        val layoutView = layoutInflater.inflate(layout, null)
+        val btClose = layoutView.findViewById<Button>(R.id.bt_Close)
+        val tvContent = layoutView.findViewById<TextView>(R.id.tv_Mean)
+        tvContent.text = content
+
+        mDialogBundle.setView(layoutView)
+        mAlertDialog = mDialogBundle.create()
+        mAlertDialog.window?.attributes?.windowAnimations = R.style.DialogAnimation
+        mAlertDialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        mAlertDialog.show()
+        btClose.setOnClickListener {
+            mAlertDialog.dismiss()
+        }
     }
 }

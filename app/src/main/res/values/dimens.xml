@@ -6,6 +6,7 @@
         <dimen name="Medium">17sp</dimen>
         <dimen name="Large">17sp</dimen>
         <dimen name="font_19">19sp</dimen>
+        <dimen name="font_20">20sp</dimen>
         <dimen name="font_18">18sp</dimen>
         <dimen name="font_22">22sp</dimen>
         <dimen name="BigLarge">30sp</dimen>
@@ -50,4 +51,5 @@
         <dimen name="dimen_220">220dp</dimen>
         <dimen name="dimen_230">230dp</dimen>
         <dimen name="dimen_235">235dp</dimen>
+        <dimen name="dimen_300">300dp</dimen>
 </resources>

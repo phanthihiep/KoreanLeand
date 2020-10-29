@@ -29,6 +29,8 @@
     <string name="title_home_detail4">Vocabulary \n basic 4</string>
     <string name="title_home_detail5">Vocabulary \n basic 5</string>
     <string name="title_home_detail6">Vocabulary \n basic 6</string>
+    <string name="btn_close">Đóng</string>
+    <string name="flash_card">Flash cards</string>
     
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
